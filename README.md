@@ -11,14 +11,14 @@
 
 <p>Jasmine is a Behavior Driven Development testing framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript framework. Thus it's suited for websites, <a href="https://nodejs.org/en/m">Node.js</a> projects, or anywhere that JavaScript can run.</p>
 
-<h3><u>Running tests</u></h3>
+<h2><u>Running tests</u></h2>
 </br>
-<p>The spec folder in <i>Kata_v1.0.0\spec</i> contains test cases.Implementation of test cases are found on </i>Kata_v1.0.0\src</i>.
+<p>The spec folder in <b><i>Kata_v1.0.0\spec</i></b> contains test cases.Implementation of test cases are found on <b></i>Kata_v1.0.0\src</i></b>.
 Navigate to spec and in the terminal write this command <b><i>jasmine name_of_test_file.js</i></p>
 
 </b>
-<h3><u>Resources</u></h3>
-</br>
+<h2><u>Resources</u></h2>
+
 <h4>Javascrpt ES6</h4>
  <ul>
     <li><a href="https://www.w3schools.com/js/js_es6.asp">w3school</a></li>
