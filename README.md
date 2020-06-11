@@ -6,7 +6,7 @@
 </br>
 
 <p align="left">
-  <img src="your_relative_path_here_number_2_large_name" width="350" alt="accessibility text">
+  <img src="https://github.com/kennethmokhethi/Kata_challenges_and_unit_testing/blob/master/Kata_v1.0.0/img/jasmine.PNG" width="350" alt="Jasmine logo">
 </p>
 
 </br>
