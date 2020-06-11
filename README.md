@@ -13,8 +13,7 @@
 
 <h2><u>Running tests</u></h2>
 </br>
-<p>The spec folder in <b><i>Kata_v1.0.0\spec</i></b> contains test cases.Implementation of test cases are found on <b></i>Kata_v1.0.0\src</i></b>.
-Navigate to spec and in the terminal write this command <b><i>jasmine name_of_test_file.js</i></p>
+<p>The <b>spec</b> folder in <b><i>Kata_v1.0.0\spec</i></b> contains test cases.Implementation of test cases are found on <b>src</b> folder <b><i>Kata_v1.0.0\src</i></b>.Navigate to <b>spec</b> and in the terminal write this command <b><i>jasmine name_of_test_file.js</i></p>
 
 </b>
 <h2><u>Resources</u></h2>
