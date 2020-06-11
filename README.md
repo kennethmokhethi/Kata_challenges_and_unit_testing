@@ -1,7 +1,7 @@
 # Kata_challenges_and_unit_testing
 
 </br>
-<h1>Test Driven Dvelopemnt(TDD) using Jasmine<h1>
+<h1>Test Driven Dvelopemnt(TDD) using Jasmine </h1>
 
 </br>
 
@@ -10,22 +10,23 @@
 </p>
 
 </br>
-Jasmine is a Behavior Driven Development testing framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript framework. Thus it's suited for websites, [Node.js](https://nodejs.org/en/) projects, or anywhere that JavaScript can run.
+<p>Jasmine is a Behavior Driven Development testing framework for JavaScript. It does not rely on browsers, DOM, or any JavaScript framework. Thus it's suited for websites, <a href="https://nodejs.org/en/m">Node.js</a>projects, or anywhere that JavaScript can run.</p>
 
 </br>
-**Running test**
+<h3>Running tests</h3>
 </br>
-The spec folder in `Kata_v1.0.0\spec` contains test cases.Implementation of test cases are found on Kata_v1.0.0\src.
-Navigate to spec and in the terminal write this command **jasmine name_of_test_file.js**
+<p>The spec folder in `Kata_v1.0.0\spec` contains test cases.Implementation of test cases are found on `Kata_v1.0.0\src`.
+Navigate to spec and in the terminal write this command **jasmine name_of_test_file.js**</p>
 
 </br>
 </br>
-**Resources**
+<h3>Resources</h3>
 </br>
-**Javascrpt ES6**
- -[w3school](https://www.w3schools.com/js/js_es6.asp) </br>
- -[javascripttutorial](https://www.javascripttutorial.net/es6/) </br>
- **Jasmine** 
+<h4>Javascrpt ES6</h4>
+ <p>-<a href="https://www.w3schools.com/js/js_es6.asp">w3school</a>  </br>
+ -<a href="https://www.javascripttutorial.net/es6/">javascripttutorial</a></br></p>
+ <h4>Jasmine</h4> 
  </br>
- -[jasmine tutorial](https://jasmine.github.io/tutorials/your_first_suite)
-
+ <p>
+ - <a href="https://jasmine.github.io/tutorials/your_first_suite">jasmine tutorial</a>
+  </p>
