@@ -27,5 +27,6 @@
  <h4>Jasmine</h4> 
  </br>
  <ul>
+    <li><a href="https://www.npmjs.com/package/jasmine">jasmine installation</a></li>
     <li><a href="https://jasmine.github.io/tutorials/your_first_suite">jasmine tutorial</a></li>
  </ul>
