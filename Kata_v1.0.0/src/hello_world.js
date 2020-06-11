@@ -4,4 +4,3 @@ const hello_world = () => {
 
 module.exports = hello_world;
 
-console.log(hello_world());
