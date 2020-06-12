@@ -1,7 +1,7 @@
 # Kata_challenges_and_unit_testing
 
 </br>
-<h1>Test Driven Developemnt(TDD) using Jasmine </h1>
+<h1>Test Driven Developement(TDD) using Jasmine </h1>
 
 </br>
 
