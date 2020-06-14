@@ -1,10 +1,10 @@
 /*
 -------------------------------------------------------------------------------indicates state of the kata challenge
-YourInitials_KC_UniqueIntegerForTheKataChallengeSuite:KataChallengeUrl eg GK_KC01:http://codekata.com/
+YourInitials:UniqueIntegerForTheKataChallengeSuite:KataChallengeUrl eg GK_KC13:http://codekata.com/
 
 
 FUNCTION IMPLEMENTATION{
-YourInitials_KC{unique_number_for_this_challenge}:TestCaseIdentifie eg.KMM_KC01:GM_KCT05
+
 }
 
 
@@ -15,10 +15,9 @@ YourInitials_KC{unique_number_for_this_challenge}:TestCaseIdentifie eg.KMM_KC01:
 
 /*   
 --------------------------------------------------------------------------------
-KMM_KC00:http://helloworld.com
+KMM:KMM_KC00:http://helloworld.com
 */
 const hello_world = () => {
-  //KMM_KC01:KMM_KCT01
   return "Test successful";
 };
 
