@@ -1,4 +1,4 @@
-let {narcissistic,comp} = require("../src/kata_v1");
+let {narcissistic,comp} = require("../src/kata_v2");
 
 describe("Narcissistic Function.   KMM_KC01", () => {
   //url://https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
@@ -36,7 +36,7 @@ describe("Narcissistic Function.   KMM_KC01", () => {
   });
 });
 
-describe("Are they the 'same'? KMM_KC02 ", () => {
+xdescribe("Are they the 'same'? KMM_KC02 ", () => {
   //url:https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
   it("Either one is null or empty", ()=>{
     let a1 ,a2 = [81] ,b1 = [9] ,b2 ,c1 = [] ,c2 = [64] ,d1 = [91] ,d2 = [];
