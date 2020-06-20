@@ -18,7 +18,7 @@ FUNCTION IMPLEMENTATION{
 KMM:KMM_KC00:http://helloworld.com
 */
 const hello_world = () => {
-  return "Test successful";
+  return "Test successfu";
 };
 
 //------------------------------------------------------------------------------

@@ -1,43 +1,42 @@
-// let {narcissistic} = require("../src/kata_v1");
-let comp = require('../src/kata_v2');
+let {comp, narcissistic} = require('../src/kata_v2');
 
-// describe("Narcissistic Function.   KMM_KC01", () => {
-//   //url://https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
-//   it("should find small numbers are all narcissistic.", () => {
-//     expect(narcissistic(7)).toBe(true, "7 is narcissistic");
-//     expect(narcissistic(5)).toBe(true, "5 is narcissistic");
-//     expect(narcissistic(1)).toBe(true, "1 is narcissistic");
-//   });
+describe("Narcissistic Function.   KMM_KC01", () => {
+   url://https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+  it("should find small numbers are all narcissistic.", () => {
+    expect(narcissistic(7)).toBe(true, "7 is narcissistic");
+    expect(narcissistic(5)).toBe(true, "5 is narcissistic");
+    expect(narcissistic(1)).toBe(true, "1 is narcissistic");
+  });
 
-//   it("should find these numbers are narcissistic", () => {
-//     expect(narcissistic(371)).toBe(true, "371 is narcissistic");
-//     expect(narcissistic(370)).toBe(true, "370 is narcissistic");
-//     expect(narcissistic(153)).toBe(true, "153 is narcissistic");
-//     expect(narcissistic(1634)).toBe(true, "1634 is narcissistic");
-//   });
+  it("should find these numbers are narcissistic", () => {
+    expect(narcissistic(371)).toBe(true, "371 is narcissistic");
+    expect(narcissistic(370)).toBe(true, "370 is narcissistic");
+    expect(narcissistic(153)).toBe(true, "153 is narcissistic");
+    expect(narcissistic(1634)).toBe(true, "1634 is narcissistic");
+  });
 
-//   it("should find these numbers are not narcissistic", () => {
-//     expect(narcissistic(48342)).toBe(false, "48342 is narcissistic");
-//     expect(narcissistic(36543)).toBe(false, "36543 is narcissistic");
-//     expect(narcissistic(21845)).toBe(false, "21845 is narcissistic");
-//     expect(narcissistic(37750)).toBe(false, "37750 is narcissistic");
-//     expect(narcissistic(33005)).toBe(false, "33005 is narcissistic");
-//     expect(narcissistic(27603)).toBe(false, "27603 is narcissistic");
-//     expect(narcissistic(49959)).toBe(false, "49959 is narcissistic");
-//   });
+  it("should find these numbers are not narcissistic", () => {
+    expect(narcissistic(48342)).toBe(false, "48342 is narcissistic");
+    expect(narcissistic(36543)).toBe(false, "36543 is narcissistic");
+    expect(narcissistic(21845)).toBe(false, "21845 is narcissistic");
+    expect(narcissistic(37750)).toBe(false, "37750 is narcissistic");
+    expect(narcissistic(33005)).toBe(false, "33005 is narcissistic");
+    expect(narcissistic(27603)).toBe(false, "27603 is narcissistic");
+    expect(narcissistic(49959)).toBe(false, "49959 is narcissistic");
+  });
 
-//   it("should find these numbers some are  narcissistic", () => {
-//     expect(narcissistic(10445500)).toBe(false, "10445500 is narcissistic");
-//     expect(narcissistic(1741725)).toBe(true, "1741725 is narcissistic");
-//     expect(narcissistic(1741725)).toBe(true, "1741725 is narcissistic");
-//     expect(narcissistic(11278784)).toBe(false, "11278784 is narcissistic");
-//     expect(narcissistic(4210818)).toBe(true, "4210818 is narcissistic");
-//     expect(narcissistic(54748)).toBe(true, "54748 is narcissistic");
-//     expect(narcissistic(10685690)).toBe(false, "10685690 is narcissistic");
-//   });
-// });
+  it("should find these numbers some are  narcissistic", () => {
+    expect(narcissistic(10445500)).toBe(false, "10445500 is narcissistic");
+    expect(narcissistic(1741725)).toBe(true, "1741725 is narcissistic");
+    expect(narcissistic(1741725)).toBe(true, "1741725 is narcissistic");
+    expect(narcissistic(11278784)).toBe(false, "11278784 is narcissistic");
+    expect(narcissistic(4210818)).toBe(true, "4210818 is narcissistic");
+    expect(narcissistic(54748)).toBe(true, "54748 is narcissistic");
+    expect(narcissistic(10685690)).toBe(false, "10685690 is narcissistic");
+  });
+});
 
-describe("Are they the 'same'? KMM_KC02 ", () => {
+xdescribe("Are they the 'same'? KMM_KC02 ", () => {
   //url:https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
   it("Either one is null or empty", ()=>{
     let a1 ,a2 = [81] ,b1 = [9] ,b2 ,c1 = [] ,c2 = [64] ,d1 = [91] ,d2 = [];
