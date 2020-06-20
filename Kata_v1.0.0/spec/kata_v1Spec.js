@@ -1,7 +1,7 @@
-let {narcissistic,comp} = require("../src/kata_v2");
+let {comp, narcissistic} = require('../src/kata_v2');
 
 describe("Narcissistic Function.   KMM_KC01", () => {
-  //url://https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+   url://https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
   it("should find small numbers are all narcissistic.", () => {
     expect(narcissistic(7)).toBe(true, "7 is narcissistic");
     expect(narcissistic(5)).toBe(true, "5 is narcissistic");
@@ -45,7 +45,6 @@ xdescribe("Are they the 'same'? KMM_KC02 ", () => {
     expect(comp(c1,c2)).toBe(false,"Testing empty and [64]");
     expect(comp(d1,d2)).toBe(false,"Testing [91] and empty");
   })
-
 
   it("They are the same", () => {
     let a1 = [121, 144, 19, 161, 19, 144, 19, 11],a2 = [11 * 11,121 * 121,144 * 144,19 * 19,161 * 161,19 * 19,144 * 144,19 * 19,],
