@@ -48,3 +48,17 @@ comp(a,b) returns false because in b 36100 is not the square of any number of a.
 NOTE:
 If a or b are nil (or null or None), the problem doesn't make sense so return false.
 The two arrays have the same size (> 0) given as parameter in function comp.
+
+3.FM_KC03:https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
+Return the number (count) of vowels in the given string.
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+The input string will only consist of lower case letters and/or spaces.
+
+4 KMM_KC04:https://edabit.com/challenge/Tnjbf6pdFsCjmaF8p
+Create a function that squares every digit of a number.
+Examples:
+  squareDigits(9119) ➞ 811181
+  quareDigits(2483) ➞ 416649
+  squareDigits(3212) ➞ 9414
+
+Notes:The function receives an integer and must return an integer.
