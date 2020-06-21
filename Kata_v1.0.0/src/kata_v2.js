@@ -1,45 +1,48 @@
-function comp(array1, array2) {
-    var comp1 = []; 
-    if( array1 == null || array2 == null || array1.length === 0 || array2.length === 0){
-        return false;
-    }else {
-        for (var j in array2) {
-            comp1.push(Math.sqrt(array2[j]));
-          }
-          let resultsActions = array1.map(d => d);
-          return comp1.every(i => resultsActions.includes(i));
-    }
-    
-  }
-  
-//   console.log(comp( [79, 32, 54, 34, 3, 34, 45],  [6241, 1024, 2917, 1156, 9, 1156, 2025]));
-//   console.log(comp([121, 144, 19, 161, 19, 144, 19, 11], [121, 14641, 20736, 361, 25921, 361, 20736, 361]));
-
-
-
-//Kuhle 
 function narcissistic(value) {
-  
+  //SM:KMM_KC01:https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
   var tempLength = value.toString().length;
-  var strValue = value.toString(); 
-  var tempValue; 
-  var total = 0; 
-  
-  for(var i = 0; i < tempLength; i++)
-  {
-    tempValue = 0; 
-    tempValue = Math.pow(parseInt(strValue.charAt(i)), tempLength); 
-    total += tempValue; 
-    
+  var strValue = value.toString();
+  var tempValue;
+  var total = 0;
+
+  for (var i = 0; i < tempLength; i++) {
+    tempValue = 0;
+    tempValue = Math.pow(parseInt(strValue.charAt(i)), tempLength);
+    total += tempValue;
   }
-  
-  if(total === value)
-  {
-    return true; 
-  }else
-  {
-    return false; 
+
+  if (total === value) {
+    return true;
+  } else {
+    return false;
   }
 }
 
-  module.exports = {narcissistic, comp};
+function comp(array1, array2) {
+  //FM:KMM_KC02 https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
+  var comp1 = [];
+  if (
+    array1 == null ||
+    array2 == null ||
+    array1.length === 0 ||
+    array2.length === 0
+  ) {
+    return false;
+  } else {
+    for (var j in array2) {
+      comp1.push(Math.sqrt(array2[j]));
+    }
+    let resultsActions = array1.map((d) => d);
+    return comp1.every((i) => resultsActions.includes(i));
+  }
+
+  let resultsActions = array1.map((d) => d);
+  return comp1.every((i) => resultsActions.includes(i));
+}
+
+const getCount = (str) => {
+  //KMM:FM_KC03:https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
+  return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
+};
+
+module.exports = { narcissistic, comp, getCount };
