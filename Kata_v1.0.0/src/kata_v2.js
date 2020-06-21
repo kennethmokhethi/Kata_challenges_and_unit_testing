@@ -1,3 +1,23 @@
+function narcissistic(value) {
+  //SM:KMM_KC01:https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+  var tempLength = value.toString().length;
+  var strValue = value.toString();
+  var tempValue;
+  var total = 0;
+
+  for (var i = 0; i < tempLength; i++) {
+    tempValue = 0;
+    tempValue = Math.pow(parseInt(strValue.charAt(i)), tempLength);
+    total += tempValue;
+  }
+
+  if (total === value) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 function comp(array1, array2) {
   //FM:KMM_KC02 https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
   var comp1 = [];
@@ -25,31 +45,4 @@ const getCount = (str) => {
   return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
 };
 
-module.exports = { comp, getCount };
-
-//Kuhle 
-function narcissistic(value) {
-  
-  var tempLength = value.toString().length;
-  var strValue = value.toString(); 
-  var tempValue; 
-  var total = 0; 
-  
-  for(var i = 0; i < tempLength; i++)
-  {
-    tempValue = 0; 
-    tempValue = Math.pow(parseInt(strValue.charAt(i)), tempLength); 
-    total += tempValue; 
-    
-  }
-  
-  if(total === value)
-  {
-    return true; 
-  }else
-  {
-    return false; 
-  }
-}
-
-  module.exports = {narcissistic, comp};
+module.exports = { narcissistic, comp, getCount };

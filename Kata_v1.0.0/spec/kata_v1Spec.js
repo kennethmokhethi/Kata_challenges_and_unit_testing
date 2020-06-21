@@ -1,8 +1,7 @@
-// let {narcissistic} = require("../src/kata_v1");
-let { comp, getCount, sqaureDigits } = require("../src/kata_v2");
+let { comp, getCount, narcissistic, sqaureDigits } = require("../src/kata_v2");
 
-xdescribe("Narcissistic Function.   KMM_KC01", () => {
-  //url://https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+describe("Narcissistic Function.   KMM_KC01", () => {
+  //url:https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
   it("should find small numbers are all narcissistic.", () => {
     expect(narcissistic(7)).toBe(true, "7 is narcissistic");
     expect(narcissistic(5)).toBe(true, "5 is narcissistic");
@@ -37,7 +36,7 @@ xdescribe("Narcissistic Function.   KMM_KC01", () => {
   });
 });
 
-xdescribe("Are they the 'same'? KMM_KC02 ", () => {
+describe("Are they the 'same'? KMM_KC02 ", () => {
   //url:https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
   it("Either one is null or empty", () => {
     let a1,
