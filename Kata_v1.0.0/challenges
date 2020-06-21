@@ -62,3 +62,17 @@ Examples:
   squareDigits(3212) ➞ 9414
 
 Notes:The function receives an integer and must return an integer.
+
+
+
+
+CHALLENGE 03:
+
+Write a JavaScript program to create a new string adding "Py" in front of a given string. 
+If the given string begins with "Py" then return the original string.
+
+string_check(stringName) returns 'Py' + stringName, if the first two letters in stringName do not contain 'Py'.
+string_check(stringName) returns stringName, if the first two letters contain a 'Py'. 
+
+NOTE: 
+if the stringName is null or undefined(enters in an integer, the function should return false

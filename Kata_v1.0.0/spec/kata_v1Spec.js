@@ -37,7 +37,7 @@ xdescribe("Narcissistic Function.   KMM_KC01", () => {
   });
 });
 
-describe("Are they the 'same'? KMM_KC02 ", () => {
+xdescribe("Are they the 'same'? KMM_KC02 ", () => {
   //url:https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
   it("Either one is null or empty", () => {
     let a1,

@@ -26,3 +26,30 @@ const getCount = (str) => {
 };
 
 module.exports = { comp, getCount };
+
+//Kuhle 
+function narcissistic(value) {
+  
+  var tempLength = value.toString().length;
+  var strValue = value.toString(); 
+  var tempValue; 
+  var total = 0; 
+  
+  for(var i = 0; i < tempLength; i++)
+  {
+    tempValue = 0; 
+    tempValue = Math.pow(parseInt(strValue.charAt(i)), tempLength); 
+    total += tempValue; 
+    
+  }
+  
+  if(total === value)
+  {
+    return true; 
+  }else
+  {
+    return false; 
+  }
+}
+
+  module.exports = {narcissistic, comp};
