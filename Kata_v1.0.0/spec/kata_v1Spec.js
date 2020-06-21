@@ -143,3 +143,25 @@ describe("Square Every Digit :KMM_KC04", () => {
     expect(sqaureDigits(9119)).toBeInstanceOf(Number, "9119 is a Number");
   });
 });
+
+
+
+
+describe("string_check Function.   Challenge 03", () => {
+   
+  it("Should check if the string contains a 'Py'", () => {
+    expect(string_check("Python")).toBe(true, "Containes a Py");
+    expect(string_check("Pyridoxal")).toBe(true, "Containes a Py");
+    expect(string_check("Pyelogram")).toBe(true, "Containes a Py");
+  });
+   
+     it("should it not find 'Py' in the string it should retur false", () => {
+    expect(string_check("Faith")).toBe(false, "Does not contain Py");
+    expect(string_check("Kenneth")).toBe(false, "Does not contain Py");
+    expect(string_check("Kuhle")).toBe(false, "Does not contain Py");
+  });
+   
+     it("Either null or empty", ()=>{
+    expect(string_check(" ")).toBe(false,"Testing empty");
+    expect(string_check("!")).toBe(false,"Testing null");
+  })
