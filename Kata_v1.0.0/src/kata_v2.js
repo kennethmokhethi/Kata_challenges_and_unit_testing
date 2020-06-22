@@ -45,4 +45,8 @@ const getCount = (str) => {
   return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
 };
 
-module.exports = { narcissistic, comp, getCount };
+const reverseArray = (array) => {
+  return array.reverse();
+}
+
+module.exports = { narcissistic, comp, getCount, reverseArray };

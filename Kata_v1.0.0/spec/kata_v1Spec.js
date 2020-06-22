@@ -1,4 +1,4 @@
-let { comp, getCount, narcissistic, sqaureDigits } = require("../src/kata_v2");
+let { comp, getCount, narcissistic, sqaureDigits, reverseArray } = require("../src/kata_v2");
 
 describe("Narcissistic Function.   KMM_KC01", () => {
   //url:https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
@@ -166,3 +166,12 @@ describe("string_check Function.   Challenge 03", () => {
     expect(string_check("!")).toBe(false,"Testing null");
   })
 });
+
+describe("reverse an array function", () => {
+  it("should reverse an array of numbers", () =>{
+    expect(reverseArray([1,2,3])).toEqual([3,2,1])
+  });
+  it("should reverse an array of strings", () =>{
+    expect(reverseArray(['one', 'two', 'three'])).toEqual(['three', 'two', 'one'])
+  });
+})
