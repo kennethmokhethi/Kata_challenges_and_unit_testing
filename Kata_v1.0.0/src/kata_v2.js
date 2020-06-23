@@ -47,6 +47,14 @@ const getCount = (str) => {
 
 const reverseArray = (array) => {
   return array.reverse();
-}
+};
 
-module.exports = { narcissistic, comp, getCount, reverseArray };
+const string_check = (str) => {
+  if (!str || str.length < 1) {
+    return false;
+  }
+
+  return str.startsWith("Py");
+};
+
+module.exports = { narcissistic, comp, getCount, reverseArray, string_check };

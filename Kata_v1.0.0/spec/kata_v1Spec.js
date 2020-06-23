@@ -1,4 +1,11 @@
-let { comp, getCount, narcissistic, sqaureDigits, reverseArray } = require("../src/kata_v2");
+let {
+  comp,
+  getCount,
+  narcissistic,
+  sqaureDigits,
+  reverseArray,
+  string_check,
+} = require("../src/kata_v2");
 
 describe("Narcissistic Function.   KMM_KC01", () => {
   //url:https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
@@ -144,34 +151,34 @@ describe("Square Every Digit :KMM_KC04", () => {
   });
 });
 
-
-
-
-describe("string_check Function.   Challenge 03", () => {
-   
+describe("string_check Function.  SM_KC05", () => {
   it("Should check if the string contains a 'Py'", () => {
     expect(string_check("Python")).toBe(true, "Python Containes a Py");
     expect(string_check("Pyridoxal")).toBe(true, "Pyridoxal Containes a Py");
     expect(string_check("Pyelogram")).toBe(true, "Pyelogram Containes a Py");
   });
-   
-     it("should it not find 'Py' in the string it should retur false", () => {
+
+  it("should it not find 'Py' in the string it should retur false", () => {
     expect(string_check("Faith")).toBe(false, "Faith Does not contain Py");
     expect(string_check("Kenneth")).toBe(false, "Kenneth Does not contain Py");
     expect(string_check("Kuhle")).toBe(false, "Kuhle Does not contain Py");
   });
-   
-     it("Either null or empty", ()=>{
-    expect(string_check(" ")).toBe(false,"Testing empty");
-    expect(string_check("!")).toBe(false,"Testing null");
-  })
+
+  it("Either null or empty", () => {
+    expect(string_check(" ")).toBe(false, "Testing empty");
+    expect(string_check("!")).toBe(false, "Testing null");
+  });
 });
 
 describe("reverse an array function", () => {
-  it("should reverse an array of numbers", () =>{
-    expect(reverseArray([1,2,3])).toEqual([3,2,1])
+  it("should reverse an array of numbers", () => {
+    expect(reverseArray([1, 2, 3])).toEqual([3, 2, 1]);
   });
-  it("should reverse an array of strings", () =>{
-    expect(reverseArray(['one', 'two', 'three'])).toEqual(['three', 'two', 'one'])
+  it("should reverse an array of strings", () => {
+    expect(reverseArray(["one", "two", "three"])).toEqual([
+      "three",
+      "two",
+      "one",
+    ]);
   });
-})
+});
