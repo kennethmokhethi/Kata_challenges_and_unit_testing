@@ -74,7 +74,15 @@ string_check(stringName) returns stringName, if the first two letters contain a 
 NOTE: 
 if the stringName is null or undefined(enters in an integer, the function should return false
 
-6. FM_KC07:https://edabit.com/challenge/hzxN9bAebBPNqdQto
+6.SM_KC06
+Create a function that reverse elements of an arrays
+
+Eg
+array = [1,2,3,4,5];
+reverse(array)  = [5,4,3,2,1]
+
+
+7. FM_KC07:https://edabit.com/challenge/hzxN9bAebBPNqdQto
 A Redundant Function
 Write a function redundant that takes in a string `str` and returns a function that returns `str`.
 
@@ -88,3 +96,24 @@ const f3 = redundant("")
 f3() ➞ ""
 
 NOTE: Your function should return a function, not a string.
+
+8.KM_KC08
+Create a function that takes a number (step) as an argument and returns the amount of boxes in that
+step of the sequence.
+ 
+Step 1 = 3 boxes
+Step 2 = 2 boxes
+Step 3 = 5 boxes
+Step 4 = 4 boxes
+Step 5 = 7 boxes
+Step 6 = 6 boxes
+
+Examples
+boxSeq(0) ➞ 0
+
+boxSeq(1) ➞ 3
+
+boxSeq(2) ➞ 2
+
+Notes:
+Step (the input) is always a positive integer (or zero).

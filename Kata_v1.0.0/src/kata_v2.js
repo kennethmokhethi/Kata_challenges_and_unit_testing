@@ -50,12 +50,18 @@ const string_check = (str) => {
   if (!str || str.length < 1) {
     return false;
   }
-  const reverseArray = (array) => {
-    //FM:SM_KC06
-    return array.reverse();
-  };
-
   return str.startsWith("Py");
 };
 
-module.exports = { narcissistic, comp, getCount, reverseArray, string_check };
+const reverseArray = (array) => {
+  //FM:SM_KC06
+  return array.reverse();
+};
+
+module.exports = {
+  narcissistic,
+  comp,
+  getCount,
+  reverseArray,
+  string_check,
+};
