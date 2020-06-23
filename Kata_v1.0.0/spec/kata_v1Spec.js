@@ -170,7 +170,7 @@ describe("string_check Function.  SM_KC05", () => {
   });
 });
 
-describe("reverse an array function", () => {
+describe("reverse an array function SM_KC06", () => {
   it("should reverse an array of numbers", () => {
     expect(reverseArray([1, 2, 3])).toEqual([3, 2, 1]);
   });
@@ -181,4 +181,16 @@ describe("reverse an array function", () => {
       "one",
     ]);
   });
+});
+
+describe("Redundant function FM_KC07", () => {
+  https://edabit.com/challenge/hzxN9bAebBPNqdQto
+  it('should return a function containing a string', () => {
+    const f1 = redundant("apple")
+    expect(f1()).toBe("apple")
+  });
+  it('should return a function containing an empty string', () => {
+    const f2 = redundant("")
+    expect(f2()).toBe("")
+  })
 });

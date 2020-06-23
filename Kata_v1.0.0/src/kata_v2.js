@@ -45,15 +45,15 @@ const getCount = (str) => {
   return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
 };
 
-const reverseArray = (array) => {
-  return array.reverse();
-};
-
 const string_check = (str) => {
   //KMM:SM_KC05
   if (!str || str.length < 1) {
     return false;
   }
+  const reverseArray = (array) => {
+    //FM:SM_KC06
+    return array.reverse();
+  };
 
   return str.startsWith("Py");
 };
