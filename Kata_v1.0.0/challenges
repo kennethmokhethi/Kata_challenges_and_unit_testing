@@ -73,3 +73,18 @@ string_check(stringName) returns stringName, if the first two letters contain a 
 
 NOTE: 
 if the stringName is null or undefined(enters in an integer, the function should return false
+
+6. A Redundant Function
+https://edabit.com/challenge/hzxN9bAebBPNqdQto
+Write a function redundant that takes in a string `str` and returns a function that returns `str`.
+
+const f1 = redundant("apple")
+f1() ➞ "apple"
+
+const f2 = redundant("pear")
+f2() ➞ "pear"
+
+const f3 = redundant("")
+f3() ➞ ""
+
+NOTE: Your function should return a function, not a string.
