@@ -174,4 +174,16 @@ describe("reverse an array function", () => {
   it("should reverse an array of strings", () =>{
     expect(reverseArray(['one', 'two', 'three'])).toEqual(['three', 'two', 'one'])
   });
-})
+});
+
+describe("Redundant function", () => {
+  https://edabit.com/challenge/hzxN9bAebBPNqdQto
+  it('should return a function containing a string', () => {
+    const f1 = redundant("apple")
+    expect(f1()).toBe("apple")
+  });
+  it('should return a function containing an empty string', () => {
+    const f2 = redundant("")
+    expect(f2()).toBe("")
+  })
+});
