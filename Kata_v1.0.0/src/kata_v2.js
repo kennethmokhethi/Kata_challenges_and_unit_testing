@@ -50,6 +50,7 @@ const reverseArray = (array) => {
 };
 
 const string_check = (str) => {
+  //KMM:SM_KC05
   if (!str || str.length < 1) {
     return false;
   }
