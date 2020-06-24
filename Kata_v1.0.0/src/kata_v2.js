@@ -45,4 +45,19 @@ const getCount = (str) => {
   return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
 };
 
-module.exports = { narcissistic, comp, getCount };
+function squareDigits(value) {
+  var length = value.toString().length;
+  var strValue = value.toString();
+  var squredValue;
+  var answer = [];
+
+  for (let i = 0; i < length; i++) {
+    squredValue = 0;
+    squredValue = Math.pow(parseInt(strValue.charAt(i)), 2);
+    answer.push(squredValue);
+  }
+
+  return answer.join("");
+}
+console.log(squareDigits(9119));
+module.exports = { narcissistic, comp, getCount, squareDigits };
