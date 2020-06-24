@@ -45,8 +45,23 @@ const getCount = (str) => {
   return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
 };
 
-const reverseArray = (array) => {
-  return array.reverse();
-}
+const string_check = (str) => {
+  //KMM:SM_KC05
+  if (!str || str.length < 1) {
+    return false;
+  }
+  return str.startsWith("Py");
+};
 
-module.exports = { narcissistic, comp, getCount, reverseArray };
+const reverseArray = (array) => {
+  //FM:SM_KC06
+  return array.reverse();
+};
+
+module.exports = {
+  narcissistic,
+  comp,
+  getCount,
+  reverseArray,
+  string_check,
+};

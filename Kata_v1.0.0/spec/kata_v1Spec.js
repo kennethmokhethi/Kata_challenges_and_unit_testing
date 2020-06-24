@@ -1,4 +1,12 @@
-let { comp, getCount, narcissistic, sqaureDigits, reverseArray } = require("../src/kata_v2");
+let {
+  comp,
+  getCount,
+  narcissistic,
+  sqaureDigits,
+  reverseArray,
+  boxSeq,
+  string_check,
+} = require("../src/kata_v2");
 
 describe("Narcissistic Function.   KMM_KC01", () => {
   //url:https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
@@ -144,46 +152,57 @@ describe("Square Every Digit :KMM_KC04", () => {
   });
 });
 
-
-
-
-describe("string_check Function.   Challenge 03", () => {
-   
+describe("string_check Function.  SM_KC05", () => {
   it("Should check if the string contains a 'Py'", () => {
     expect(string_check("Python")).toBe(true, "Python Containes a Py");
     expect(string_check("Pyridoxal")).toBe(true, "Pyridoxal Containes a Py");
     expect(string_check("Pyelogram")).toBe(true, "Pyelogram Containes a Py");
   });
-   
-     it("should it not find 'Py' in the string it should retur false", () => {
+
+  it("should it not find 'Py' in the string it should retur false", () => {
     expect(string_check("Faith")).toBe(false, "Faith Does not contain Py");
     expect(string_check("Kenneth")).toBe(false, "Kenneth Does not contain Py");
     expect(string_check("Kuhle")).toBe(false, "Kuhle Does not contain Py");
   });
-   
-     it("Either null or empty", ()=>{
-    expect(string_check(" ")).toBe(false,"Testing empty");
-    expect(string_check("!")).toBe(false,"Testing null");
-  })
-});
 
-describe("reverse an array function", () => {
-  it("should reverse an array of numbers", () =>{
-    expect(reverseArray([1,2,3])).toEqual([3,2,1])
-  });
-  it("should reverse an array of strings", () =>{
-    expect(reverseArray(['one', 'two', 'three'])).toEqual(['three', 'two', 'one'])
+  it("Either null or empty", () => {
+    expect(string_check(" ")).toBe(false, "Testing empty");
+    expect(string_check("!")).toBe(false, "Testing null");
   });
 });
 
-describe("Redundant function", () => {
-  https://edabit.com/challenge/hzxN9bAebBPNqdQto
-  it('should return a function containing a string', () => {
-    const f1 = redundant("apple")
-    expect(f1()).toBe("apple")
+describe("reverse an array function SM_KC06", () => {
+  it("should reverse an array of numbers", () => {
+    expect(reverseArray([1, 2, 3])).toEqual([3, 2, 1]);
   });
-  it('should return a function containing an empty string', () => {
-    const f2 = redundant("")
-    expect(f2()).toBe("")
-  })
+  it("should reverse an array of strings", () => {
+    expect(reverseArray(["one", "two", "three"])).toEqual([
+      "three",
+      "two",
+      "one",
+    ]);
+  });
+});
+
+describe("Redundant function FM_KC07", () => {
+  //edabit.com/challenge/hzxN9bAebBPNqdQto
+  https: it("should return a function containing a string", () => {
+    const f1 = redundant("apple");
+    expect(f1()).toBe("apple");
+  });
+  it("should return a function containing an empty string", () => {
+    const f2 = redundant("");
+    expect(f2()).toBe("");
+  });
+});
+
+describe("Box sequence,KM_KC08", () => {
+  it("Return the number of boxes in the sequence", () => {
+    expect(boxSeq(5)).toBe(7, "There are 7 boxes in step 5");
+    expect(boxSeq(0)).toBe(0, "There are 0 boxes in step 0");
+    expect(boxSeq(6)).toBe(6, "There are 6 boxes in step 6");
+    expect(boxSeq(99)).toBe(101, "There are 101 boxes in step 99");
+    expect(boxSeq(2)).toBe(2, "There are 2 boxes in step 2");
+    expect(boxSeq(1)).toBe(3, "There are 3 boxes in step 1");
+  });
 });
