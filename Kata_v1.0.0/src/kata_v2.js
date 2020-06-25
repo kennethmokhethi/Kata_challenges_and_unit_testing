@@ -45,4 +45,14 @@ const getCount = (str) => {
   return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
 };
 
-module.exports = { narcissistic, comp, getCount };
+const boxSequence = (step) => {
+	var boxes;
+	if(step % 2 !==0 ) {
+		return boxes = step + 2;
+	}else if (step % 2 === 0 ){
+		return boxes = step;
+	}
+	return boxes;
+}
+
+module.exports = { narcissistic, comp, getCount, boxSequence };
