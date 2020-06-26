@@ -58,10 +58,15 @@ const reverseArray = (array) => {
   return array.reverse();
 };
 
+const boxSequence = (step) => {
+  return (step % 2 !== 0 ? boxes = step + 2 : boxes = step);
+}
+
 module.exports = {
   narcissistic,
   comp,
   getCount,
   reverseArray,
   string_check,
+  boxSequence
 };
