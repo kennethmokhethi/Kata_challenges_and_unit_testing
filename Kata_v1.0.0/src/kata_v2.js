@@ -59,5 +59,5 @@ function squareDigits(value) {
 
   return answer.join("");
 }
-console.log(squareDigits(9119));
+
 module.exports = { narcissistic, comp, getCount, squareDigits };
