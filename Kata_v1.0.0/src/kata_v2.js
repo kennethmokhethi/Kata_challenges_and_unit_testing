@@ -71,13 +71,10 @@ const reverseArray = (array) => {
 };
 
 const boxSeq = (step) => {
-  return step % 2 !== 0 ? step + 2 : step;
+  return step % 2 !== 0 ? (boxes = step + 2) : (boxes = step);
 };
-const redundant = (str) => {
-  return () => {
-    return str;
-  };
-};
+
+
 
 module.exports = {
   narcissistic,
@@ -86,6 +83,4 @@ module.exports = {
   reverseArray,
   string_check,
   boxSeq,
-  redundant,
-  squareDigits,
 };

@@ -5,12 +5,16 @@ let {
   squareDigits,
   reverseArray,
   boxSeq,
+<<<<<<< HEAD
   redundant,
+=======
+  intWithinBounds,
+>>>>>>> master
   string_check,
 } = require("../src/kata_v2");
 
 describe("Narcissistic Function.   KMM_KC01", () => {
-  //url:https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
+  https://www.codewars.com/kata/5287e858c6b5a9678200083c/train/javascript
   it("should find small numbers are all narcissistic.", () => {
     expect(narcissistic(7)).toBe(true, "7 is narcissistic");
     expect(narcissistic(5)).toBe(true, "5 is narcissistic");
@@ -46,7 +50,7 @@ describe("Narcissistic Function.   KMM_KC01", () => {
 });
 
 describe("Are they the 'same'? KMM_KC02 ", () => {
-  //url:https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
+ https://www.codewars.com/kata/550498447451fbbd7600041c/train/javascript
   it("Either one is null or empty", () => {
     let a1,
       a2 = [81],
@@ -125,7 +129,7 @@ describe("Are they the 'same'? KMM_KC02 ", () => {
 });
 
 describe("Count vowels:FM_KC03", () => {
-  //url:https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
+ https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
   it("should be difined", () => {
     expect(getCount("abracadabra")).toBe(
       5,
@@ -141,7 +145,7 @@ describe("Count vowels:FM_KC03", () => {
 });
 
 describe("Square Every Digit :KMM_KC04", () => {
-  //url:https://edabit.com/challenge/Tnjbf6pdFsCjmaF8p
+  https://edabit.com/challenge/Tnjbf6pdFsCjmaF8p
   it("Returns the square of each digit", () => {
     expect(squareDigits(9119)).toBe(811181, "should return 811181 for 9119");
     expect(squareDigits(2483)).toBe(416649, "should return 416649 for 2483");
@@ -186,8 +190,8 @@ describe("reverse an array function SM_KC06", () => {
 });
 
 describe("Redundant function FM_KC07", () => {
-  //edabit.com/challenge/hzxN9bAebBPNqdQto
-  https: it("should return a function containing a string", () => {
+  https:edabit.com/challenge/hzxN9bAebBPNqdQto
+   it("should return a function containing a string", () => {
     const f1 = redundant("apple");
     expect(f1()).toBe("apple");
   });
@@ -205,5 +209,20 @@ describe("Box sequence,KM_KC08", () => {
     expect(boxSeq(99)).toBe(101, "There are 101 boxes in step 99");
     expect(boxSeq(2)).toBe(2, "There are 2 boxes in step 2");
     expect(boxSeq(1)).toBe(3, "There are 3 boxes in step 1");
+  });
+});
+
+describe("Integer in Range,KM_KC09", () => {
+  https://edabit.com/challenge/YT2kXSMEtACPPk35R
+  it("Should return true", () => {
+    expect(intWithinBounds(3, 1, 9)).toBe(true, "3 1 9 is true ");
+    expect(intWithinBounds(10, 9, 11)).toBe(true, "10, 9, 11 is true ");
+    expect(intWithinBounds(-3, -10, 10)).toBe(true, "-3, -10, 10 is true ");
+  });
+
+  it("Should return false", () => {
+    expect(intWithinBounds(6, 1, 6)).toBe(false, "6, 1, 6 is false ");
+    expect(intWithinBounds(6.3, 2, 6)).toBe(false, "6.3, 2, 6 is false ");
+    expect(intWithinBounds(9, 9, 9)).toBe(false, "9, 9, 9 is false ");
   });
 });
