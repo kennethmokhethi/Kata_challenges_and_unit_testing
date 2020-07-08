@@ -70,8 +70,8 @@ const reverseArray = (array) => {
   return array.reverse();
 };
 
-const boxSequence = (step) => {
-  return step % 2 !== 0 ? (boxes = step + 2) : (boxes = step);
+const boxSeq = (step) => {
+  return step % 2 !== 0 ? step + 2 : step;
 };
 
 module.exports = {
@@ -80,6 +80,7 @@ module.exports = {
   getCount,
   reverseArray,
   string_check,
-  boxSequence,
+  boxSeq,
   squareDigits,
 };
+
