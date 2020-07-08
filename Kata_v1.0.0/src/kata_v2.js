@@ -35,15 +35,27 @@ function comp(array1, array2) {
     let resultsActions = array1.map((d) => d);
     return comp1.every((i) => resultsActions.includes(i));
   }
-
-  let resultsActions = array1.map((d) => d);
-  return comp1.every((i) => resultsActions.includes(i));
 }
 
 const getCount = (str) => {
   //KMM:FM_KC03:https://www.codewars.com/kata/54ff3102c1bad923760001f3/train/javascript
   return str.split("").filter((x) => x.match(/[aeiou]/g)).length;
 };
+
+function squareDigits(value) {
+  var length = value.toString().length;
+  var strValue = value.toString();
+  var squredValue;
+  var answer = [];
+
+  for (let i = 0; i < length; i++) {
+    squredValue = 0;
+    squredValue = Math.pow(parseInt(strValue.charAt(i)), 2);
+    answer.push(squredValue);
+  }
+
+  return answer.join("");
+}
 
 const string_check = (str) => {
   //KMM:SM_KC05
@@ -58,9 +70,9 @@ const reverseArray = (array) => {
   return array.reverse();
 };
 
-const boxSequence = (step) => {
-  return (step % 2 !== 0 ? boxes = step + 2 : boxes = step);
-}
+const boxSeq = (step) => {
+  return step % 2 !== 0 ? step + 2 : step;
+};
 
 module.exports = {
   narcissistic,
@@ -68,5 +80,7 @@ module.exports = {
   getCount,
   reverseArray,
   string_check,
-  boxSequence
+  boxSeq,
+  squareDigits,
 };
+
