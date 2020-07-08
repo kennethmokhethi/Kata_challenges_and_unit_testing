@@ -5,6 +5,7 @@ let {
   squareDigits,
   reverseArray,
   boxSeq,
+  redundant,
   string_check,
 } = require("../src/kata_v2");
 
@@ -184,7 +185,7 @@ describe("reverse an array function SM_KC06", () => {
   });
 });
 
-xdescribe("Redundant function FM_KC07", () => {
+describe("Redundant function FM_KC07", () => {
   //edabit.com/challenge/hzxN9bAebBPNqdQto
   https: it("should return a function containing a string", () => {
     const f1 = redundant("apple");
