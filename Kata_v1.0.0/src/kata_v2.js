@@ -71,8 +71,8 @@ const reverseArray = (array) => {
 };
 
 const boxSequence = (step) => {
-  return (step % 2 !== 0 ? boxes = step + 2 : boxes = step);
-}
+  return step % 2 !== 0 ? (boxes = step + 2) : (boxes = step);
+};
 
 module.exports = {
   narcissistic,
@@ -80,5 +80,6 @@ module.exports = {
   getCount,
   reverseArray,
   string_check,
-  boxSequence
+  boxSequence,
+  squareDigits,
 };
