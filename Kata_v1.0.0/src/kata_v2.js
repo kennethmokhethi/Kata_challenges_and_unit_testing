@@ -35,9 +35,6 @@ function comp(array1, array2) {
     let resultsActions = array1.map((d) => d);
     return comp1.every((i) => resultsActions.includes(i));
   }
-
-  let resultsActions = array1.map((d) => d);
-  return comp1.every((i) => resultsActions.includes(i));
 }
 
 const getCount = (str) => {
@@ -59,5 +56,29 @@ function squareDigits(value) {
 
   return answer.join("");
 }
-console.log(squareDigits(9119));
-module.exports = { narcissistic, comp, getCount, squareDigits };
+
+const string_check = (str) => {
+  //KMM:SM_KC05
+  if (!str || str.length < 1) {
+    return false;
+  }
+  return str.startsWith("Py");
+};
+
+const reverseArray = (array) => {
+  //FM:SM_KC06
+  return array.reverse();
+};
+
+const boxSequence = (step) => {
+  return (step % 2 !== 0 ? boxes = step + 2 : boxes = step);
+}
+
+module.exports = {
+  narcissistic,
+  comp,
+  getCount,
+  reverseArray,
+  string_check,
+  boxSequence
+};
